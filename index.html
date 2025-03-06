@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio: Cicli for-in e for-of in JavaScript</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .instructions,
+        .example,
+        .output {
+            flex: 1;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .instructions {
+            background-color: #f0f7ff;
+            border: 1px solid #cce5ff;
+        }
+
+        .example {
+            background-color: #f0fff0;
+            border: 1px solid #ccffcc;
+        }
+
+        .output {
+            background-color: #fff0f7;
+            border: 1px solid #ffccdd;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        ul#fruttaLista {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul#fruttaLista li {
+            padding: 8px;
+            margin-bottom: 5px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #4CAF50;
+        }
+
+        #outputForIn,
+        #outputForOf {
+            min-height: 100px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Esercizio: Cicli for-in e for-of in JavaScript</h1>
+
+    <div class="container">
+        <div class="instructions">
+            <h2>Istruzioni</h2>
+            <p>Questo esercizio ti aiuterà a comprendere la differenza tra i cicli <code>for-in</code> e
+                <code>for-of</code> in JavaScript.
+            </p>
+            <p><strong>for-in</strong>: Itera sugli indici o le proprietà di un oggetto.</p>
+            <p><strong>for-of</strong>: Itera sui valori di un oggetto iterabile (array, string, ecc.).</p>
+        </div>
+
+        <div class="example">
+            <h2>Esempio di Dati</h2>
+            <p>Abbiamo un array di frutti e un oggetto con proprietà:</p>
+            <h3>Lista Frutti:</h3>
+            <ul id="fruttaLista00">
+                <li>Mela</li>
+                <li>Banana</li>
+                <li>Arancia</li>
+                <li>Fragola</li>
+                <li>Kiwi</li>
+            </ul>
+            <h3>Caratteristica frutta:</h3>
+            <ul id="fruttaLista01">
+                <li>Nome: mela</li>
+                <li>Colore: gialla</li>
+                <li>Bio: true</li>
+                <li>Commestibile: sì</li>
+                <li>Kiwi: verde</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Esercizio 1: Ciclo for-of</h2>
+    <p>Crea un array di frutta come nell'esempio e riempi una lista</p>
+    <ul id="fruttaListaOf">
+<li>qualcosa</li>
+    </ul>
+
+    <h2>Esercizio 2: Ciclo for-in</h2>
+    <p>Crea un oggetto di frutta come nell'esempio e riempi una lista</p>
+    <ul id="fruttaListaIn">
+        <li>qualcosa</li>
+    </ul>
+
+    <h2>Sfida:</h2>
+    <p>Prova a modificare il codice per:</p>
+    <ol>
+        <li>Aggiungi un nuovo frutto vedi come cambia l'output</li>
+    </ol>
+
+    <script>
+        // Array e oggetto di esempio
+        const arrayFrutti = [];
+
+        const oggettoFrutta = {
+        };
+
+        // Ciclo for-of
+        const outputListOf = document.getElementById('fruttaListaOf');
+
+        // Scrivere il ciclo
+        // per aggiungere qualcosa alla lista usare outputListOf += "<li>...</li>"
+
+        const outputListIn = document.getElementById('fruttaListaIn');
+        // Scrivere il ciclo
+        // per aggiungere qualcosa alla lista usare outputListIn += "<li>...</li>"
+
+    </script>
+</body>
+
+</html>
